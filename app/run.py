@@ -117,14 +117,14 @@ def index():
                  'x' : df_common_words_with_stopwords.index,
                  'y' : df_common_words_with_stopwords.values,
                  'marker' : {'color': "rgb(183,101,184)"}}],
-      'layout' : {'title' : 'Top 20 words in review with stop words','yaxis'}},
+      'layout' : {'title' : 'Top 20 words in review with stop words'}},
         # GRAPH 4  
         {'data' : [{'type' : 'bar',
                   'name' : "Top 20 without stopwords",
                  'x' :  df_common_words_no_stopwords.index,
                  'y' :  df_common_words_no_stopwords.values,
                  'marker' : {'color': "rgb(236,77,216)"}}],
-      'layout' : {'title' : 'Top 20 words in message after removing stop words','yaxis'
+      'layout' : {'title' : 'Top 20 words in message after removing stop words'
                  }},
         # GRAPH 5    
         {'data' : [{'type' : 'bar',
@@ -132,7 +132,7 @@ def index():
                  'x' :  df_top_n_trigram_no_stopwords .index,
                  'y' :  df_top_n_trigram_no_stopwords .values,
                  'marker' : {'color': "rgb(176,164,216)"}}],
-      'layout' : {'title' : 'Top 20 trigrams in message after removing stop words','yaxis'}}
+      'layout' : {'title' : 'Top 20 trigrams in message after removing stop words'}}
     ]
     
     # encode plotly graphs in JSON
