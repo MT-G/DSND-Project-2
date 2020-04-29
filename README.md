@@ -38,3 +38,16 @@ The data was provided by [Figure Eight](https://appen.com/)
 
 ## Screenshots
 
+Exploratory Data Analysis
+
+![EDA](/screenshots/EDA.png)
+![EDA](/screenshots/distribution_classes.png)
+![EDA](/screenshots/common_words.png)
+
+Model results
+
+![EDA](/screenshots/model.png)
+
+
+
+
