@@ -111,45 +111,28 @@ def index():
                     'title': "Category",
                     'tickangle': 35
                 }}},
-        # GRAPH 3 - category graph    
+        # GRAPH 3     
         {'data' : [{'type' : 'bar',
                   'name' : "Top 20 without stopwords",
                  'x' : df_common_words_with_stopwords.index,
                  'y' : df_common_words_with_stopwords.values,
                  'marker' : {'color': "rgb(183,101,184)"}}],
-      'layout' : {'title' : 'Top 20 words in review with stop words','yaxis': {
-                    'title': "Count"
-                },
-                'xaxis': {
-                    'title': "Category",
-                    'tickangle': 35
-                }}},
-        # GRAPH 4 - category graph    
+      'layout' : {'title' : 'Top 20 words in review with stop words','yaxis'}},
+        # GRAPH 4  
         {'data' : [{'type' : 'bar',
                   'name' : "Top 20 without stopwords",
                  'x' :  df_common_words_no_stopwords.index,
                  'y' :  df_common_words_no_stopwords.values,
                  'marker' : {'color': "rgb(236,77,216)"}}],
-      'layout' : {'title' : 'Top 20 words in message after removing stop words','yaxis': {
-                    'title': "Count"
-                },
-                'xaxis': {
-                    'title': "Category",
-                    'tickangle': 35
-                }}},
-        # GRAPH 5 - category graph    
+      'layout' : {'title' : 'Top 20 words in message after removing stop words','yaxis'
+                 }},
+        # GRAPH 5    
         {'data' : [{'type' : 'bar',
                   'name' : "Top 20 without stopwords",
                  'x' :  df_top_n_trigram_no_stopwords .index,
                  'y' :  df_top_n_trigram_no_stopwords .values,
                  'marker' : {'color': "rgb(176,164,216)"}}],
-      'layout' : {'title' : 'Top 20 trigrams in message after removing stop words','yaxis': {
-                    'title': "Count"
-                },
-                'xaxis': {
-                    'title': "Category",
-                    'tickangle': 35
-                }}}
+      'layout' : {'title' : 'Top 20 trigrams in message after removing stop words','yaxis'}}
     ]
     
     # encode plotly graphs in JSON
